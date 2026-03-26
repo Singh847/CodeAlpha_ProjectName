@@ -19,13 +19,13 @@ A real-time network traffic analyzer built with Python for packet inspection and
 
 ```mermaid
 flowchart TD
-    A[Network Interface] --> B[Packet Capture (Scapy)]
+    A[Network Interface] --> B[Packet Capture - Scapy]
     B --> C[Packet Processing]
     C --> D[Protocol Parsing]
     C --> E[Deep Packet Inspection]
     D --> F[Detection Engine]
     E --> F
-    F --> G[Alerts & Monitoring]
+    F --> G[Alerts and Monitoring]
     G --> H[CLI Output]
     G --> I[Interactive Dashboard v2]
 ```
