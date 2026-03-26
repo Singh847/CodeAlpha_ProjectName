@@ -1,28 +1,23 @@
-# Network Packet Analyzer (CodeAlpha Internship - Task 1)
+# CodeAlpha Network Packet Analyzer
 
-## 📌 Project Overview
-This project is a high-performance **Network Packet Analyzer** developed as part of my Cybersecurity Internship at **CodeAlpha**. The tool is designed to provide real-time visibility into network traffic, allowing for the inspection of protocols, payloads, and potential security anomalies.
+## 🛡️ Project Overview
+Developed during my **Cybersecurity Internship at CodeAlpha**, this project consists of two Python-based network analysis tools designed to capture, decode, and analyze live network traffic. It provides insights into protocol distribution, IP communication, and potential security threats.
 
-The project includes two versions:
-1.  **`packet_analyzer.py`**: A lightweight, CLI-based sniffer with protocol color-coding and session summaries.
-2.  **`packet_analyzer_v2.py`**: An advanced, terminal-based dashboard (using `curses`) featuring live traffic graphs, protocol deep-dives (HTTP, DNS, TLS, SMTP), and basic port-scan detection.
+## 🚀 Key Features
+- **Protocol Support**: Deep inspection of TCP, UDP, ICMP, DNS, ARP, and IPv6.
+- **Dual Versions**:
+  - `packet_analyzer.py`: A clean, color-coded CLI tool for quick traffic monitoring.
+  - `packet_analyzer_v2.py`: An advanced interactive dashboard with live throughput graphs and protocol "deep-dive" views.
+- **Security Logic**: Detects common anomalies like SYN scans and displays HTTP/DNS metadata.
+- **Hardware Fallback**: Automatically switches to raw sockets if Scapy is not present.
 
-## 🚀 Features
-- **Multi-Protocol Support**: Detailed dissection of TCP, UDP, ICMP, ARP, DNS, and IPv6.
-- **Live Dashboard**: Real-time sparkline graphs showing packets-per-second and distribution charts.
-- **Deep-Dive Inspection**: Extracts and displays HTTP headers, DNS queries, and TLS SNI hostnames.
-- **Security Alerts**: Built-in detection for suspicious activities like SYN port scanning.
-- **Dual Backend**: Utilizes `Scapy` for deep packet inspection with a raw-socket fallback for Linux environments.
-
-## 🛠️ Technical Stack
+## 🛠️ Requirements
+- **OS**: Kali Linux (or any Debian-based Linux)
 - **Language**: Python 3.x
-- **Core Library**: [Scapy](https://scapy.net/) (Packet manipulation and sniffing)
-- **UI Framework**: Curses (for the v2 Dashboard)
-- **Platform**: Optimized for Kali Linux / Debian-based systems.
+- **Libraries**: Scapy
 
-## 📋 Prerequisites & Installation
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/YOUR_USERNAME/CodeAlpha_Network_Packet_Analyzer.git](https://github.com/YOUR_USERNAME/CodeAlpha_Network_Packet_Analyzer.git)
-cd CodeAlpha_Network_Packet_Analyzer
+## 🚦 Installation & Usage
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/Singh847/CodeAlpha_Network_Packet_Analyzer.git](https://github.com/Singh847/CodeAlpha_Network_Packet_Analyzer.git)
+   cd CodeAlpha_Network_Packet_Analyzer
